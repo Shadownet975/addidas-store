@@ -47,7 +47,7 @@ a {
   flex-direction: column;
   max-width: 1440px;
   background-color: gold;
-  color: gray;
+  color: #336ea9;
   text-align: center;
   position: relative;
   bottom: 0;
@@ -61,7 +61,7 @@ a {
   gap: 24px;
 }
 .product-card {
-  background-color: gray;
+  background-color: rgba(16, 16, 114, 0.765);
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 8px rgba (0, 0, 0, 0.7);
@@ -79,7 +79,7 @@ a {
 }
 button {
   padding: 10px 20px;
-  background-color: aquamarine;
+  background-color: #94b9de;
   color: white;
   border: none;
   border-radius: 5px;
@@ -90,7 +90,7 @@ button:hover {
   background-color: white;
 }
 .sec {
-  background-color: #2d89ef;
+  background-color: #672def5b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +102,7 @@ button:hover {
 .sec1 {
 }
 .explore-button {
-  background-color: aquamarine;
+  background-color: #7f49e283;
   color: white;
   margin: 8px;
 }
@@ -113,7 +113,7 @@ button:hover {
   text-align: center;
 }
 .footer1 {
-  background-color: rgba(30, 152, 222, 0.635);
+  background-color: #073ef8;
   padding: 4px;
 }
 .footer1-text {
@@ -130,7 +130,7 @@ button:hover {
 }
 .footer2 {
   background-color: black;
-  color: white;
+  color: #00fff6;
   padding: 16px;
 }
 span {
