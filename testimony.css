@@ -12,6 +12,7 @@ body {
   padding-bottom: 60px; /* space for footer */
 }
 
+
 .Nav-container {
   display: flex;
   justify-content: space-between;
@@ -26,11 +27,17 @@ body {
   width: 120px;
 }
 
+.Navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .Navigation a {
   color: white;
-  margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -38,18 +45,19 @@ body {
   color: #00bcd4;
 }
 
+
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
-  max-width: 1200;
+  max-width: 1200px;
   margin: auto;
 }
 
 section div {
   background: white;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -91,11 +99,11 @@ body > p {
   color: #333;
 }
 
+
 .footer {
   background-color: #222;
   color: white;
   padding: 1.5rem 2rem;
-  position: relative;
   margin-top: 2rem;
 }
 
@@ -132,4 +140,33 @@ body > p {
   gap: 15px;
   font-size: 0.85rem;
   color: #bbb;
+}
+
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Navigation {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  .Imageh img {
+    width: 100px;
+  }
+
+  .Navigation a {
+    font-size: 0.9rem;
+  }
+
+  body > p {
+    padding: 1rem;
+  }
 }
