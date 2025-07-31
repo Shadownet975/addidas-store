@@ -1,5 +1,137 @@
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-bottom: 60px; /* space for footer */
+}
+
+.Nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.Imageh img {
+  width: 120px;
+}
+
+.Navigation a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Navigation a:hover {
+  color: #00bcd4;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+section div {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+section div:hover {
+  transform: translateY(-5px);
+}
+
+section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+section h1 {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+section h2 {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+body > p {
+  padding: 1.5rem 2rem 0;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 1.5rem 2rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer1-text {
+  font-size: 1.1rem;
+}
+
+.footer1-btn {
+  margin-top: 0.5rem;
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer1-btn:hover {
+  background-color: #0097a7;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
