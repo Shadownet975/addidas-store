@@ -9,9 +9,8 @@ body {
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
-  padding-bottom: 60px; /* space for footer */
+  padding-bottom: 60px;
 }
-
 
 .Nav-container {
   display: flex;
@@ -21,10 +20,6 @@ body {
   background-color: #111;
   color: white;
   flex-wrap: wrap;
-}
-
-.Imageh img {
-  width: 120px;
 }
 
 .Navigation {
@@ -45,17 +40,15 @@ body {
   color: #00bcd4;
 }
 
-
-section {
+.testimony-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
+  padding: 1rem;
   margin: auto;
 }
 
-section div {
+.testimony-card div {
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
@@ -63,30 +56,30 @@ section div {
   transition: transform 0.3s ease;
 }
 
-section div:hover {
+.testimony-card div:hover {
   transform: translateY(-5px);
 }
 
-section img {
+.testimony-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
 }
 
-section h1 {
+.testimony-card h1 {
   font-size: 1.25rem;
   margin-top: 0.5rem;
   color: #444;
 }
 
-section h2 {
+.testimony-card h2 {
   font-size: 1rem;
   color: #888;
   margin-bottom: 0.5rem;
 }
 
-section p {
+.testimony-card p {
   font-size: 0.95rem;
   color: #555;
 }
@@ -98,7 +91,6 @@ body > p {
   margin: 0 auto;
   color: #333;
 }
-
 
 .footer {
   background-color: #222;
@@ -140,33 +132,4 @@ body > p {
   gap: 15px;
   font-size: 0.85rem;
   color: #bbb;
-}
-
-
-@media (max-width: 900px) {
-  section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .Navigation {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  section {
-    grid-template-columns: 1fr;
-  }
-
-  .Imageh img {
-    width: 100px;
-  }
-
-  .Navigation a {
-    font-size: 0.9rem;
-  }
-
-  body > p {
-    padding: 1rem;
-  }
 }
